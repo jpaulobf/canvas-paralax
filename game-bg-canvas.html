@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Canvas Paralax</title>
+	<script src=".\scripts\paralax.js"></script>
+  </head>
+  <body onload="init()">
+
+    <canvas id="bg-canvas-0" width="320" height="224" style="position:absolute; top:10px; left:10px; z-index:1"></canvas>
+    <canvas id="bg-canvas-1" width="320" height="224" style="position:absolute; top:10px; left:10px; z-index:2"></canvas>
+    <canvas id="bg-canvas-N" width="320" height="224" style="position:absolute; top:10px; left:10px; z-index:3"></canvas>
+    <canvas id="bg-canvas-2" width="320" height="224" style="position:absolute; top:10px; left:10px; z-index:4"></canvas>
+
+    <p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
+
+    <button name="button" onclick="invertInversor()">direção</button>
+    <button name="button" onclick="speed(1)">+ velocidade</button>
+    <button name="button" onclick="speed(-1)">- velocidade</button>
+    <div id="velocidade"></div>
+    <div id="posicao"></div>
+
+  </body>
+</html>
